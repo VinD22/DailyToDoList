@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Daily To Do List</string>
+    <string name="settings">Settings</string>
+    <string name="about_app">App to lets you track your daily to do list and helps you accomplish it.</string>
+    <string name="check_my_other_apps">Check my other Apps</string>
+    <string name="rate_app">Rate App</string>
+    <string name="share_app">Share App</string>
+    <string name="share">Share</string>
+</resources>
