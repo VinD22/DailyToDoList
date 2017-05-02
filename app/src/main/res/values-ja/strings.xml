@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="about_app">あなたの毎日の仕事を達成するのに役立つアプリ</string>
+    <string name="enter_task_description">タスク説明を入力</string>
+    <string name="enter_task">タイプタスク</string>
+    <string name="add_task">タスクを追加</string>
+    <string name="delete_task">タスクの削除</string>
+    <string name="mark_as_done">完了としてマークする</string>
+    <string name="check_my_other_apps">他のアプリをチェックする</string>
+    <string name="empty_fields">空のフィールド</string>
+    <string name="settings">設定</string>
+    <string name="share">分け合う</string>
+    <string name="share_app">分け合う</string>
+    <string name="rate_app">批評</string>
+
+</resources>

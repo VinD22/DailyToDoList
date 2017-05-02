@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="about_app">App pentru a vă ajuta să vă îndepliniți sarcini zilnice</string>
+    <string name="enter_task_description">Introduceți descrierea sarcinii</string>
+    <string name="enter_task">Scrieți sarcina</string>
+    <string name="add_task">Adăugați o sarcină</string>
+    <string name="delete_task">Ștergeți sarcina</string>
+    <string name="mark_as_done">Marcați ca terminat</string>
+    <string name="check_my_other_apps">Verificați alte aplicații</string>
+    <string name="empty_fields">Câmpuri goale</string>
+    <string name="settings">reglaj</string>
+    <string name="share">împărţi</string>
+    <string name="share_app">împărţi</string>
+    <string name="rate_app">Revizuire</string>
+
+</resources>

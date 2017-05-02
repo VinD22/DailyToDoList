@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="about_app">Aplikácia, ktorá vám pomôže splniť každodenné úlohy</string>
+    <string name="enter_task_description">Zadajte popis úlohy</string>
+    <string name="enter_task">Zadajte úlohu</string>
+    <string name="add_task">Pridať úlohu</string>
+    <string name="delete_task">Odstrániť úlohu</string>
+    <string name="mark_as_done">Označiť ako hotovo</string>
+    <string name="check_my_other_apps">Skontrolujte moje ďalšie aplikácie</string>
+    <string name="empty_fields">Prázdne polia</string>
+    <string name="settings">nastavenie</string>
+    <string name="share">rozdeliť</string>
+    <string name="share_app">rozdeliť</string>
+    <string name="rate_app">Recenzia aplikácie</string>
+
+</resources>

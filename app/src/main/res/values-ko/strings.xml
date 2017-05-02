@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="about_app">일상 업무를 수행하는 데 도움이되는 앱</string>
+    <string name="enter_task_description">작업 설명 입력</string>
+    <string name="enter_task">유형 작업</string>
+    <string name="add_task">할 일 추가</string>
+    <string name="delete_task">작업 삭제</string>
+    <string name="mark_as_done">완료로 표시</string>
+    <string name="check_my_other_apps">다른 앱 확인</string>
+    <string name="empty_fields">빈 필드</string>
+    <string name="settings">설정</string>
+    <string name="share">나누다</string>
+    <string name="share_app">나누다</string>
+    <string name="rate_app">비평</string>
+
+</resources>

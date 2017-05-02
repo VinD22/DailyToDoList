@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="about_app">Ansökan som hjälper dig att uppnå dina dagliga uppgifter</string>
+    <string name="enter_task_description">Ange uppgiftsbeskrivning</string>
+    <string name="enter_task">Typ Uppgift</string>
+    <string name="add_task">Lägg till uppgift</string>
+    <string name="delete_task">Ta bort uppgift</string>
+    <string name="mark_as_done">Markera som klar</string>
+    <string name="check_my_other_apps">Kontrollera andra program</string>
+    <string name="empty_fields">Kontrollera andra program</string>
+    <string name="settings">inställningar</string>
+    <string name="share">dela</string>
+    <string name="share_app">dela</string>
+    <string name="rate_app">Recension</string>
+
+</resources>

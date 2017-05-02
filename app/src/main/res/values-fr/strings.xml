@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="about_app">Appuyer pour vous aider à accomplir vos tâches quotidiennes</string>
+    <string name="enter_task_description">Entrez la description de la tâche</string>
+    <string name="enter_task">Type de tâche</string>
+    <string name="add_task">Ajouter une tâche</string>
+    <string name="delete_task">Supprimer la tâche</string>
+    <string name="mark_as_done">Marque comme Terminé</string>
+    <string name="check_my_other_apps">Vérifiez d\'autres applications</string>
+    <string name="empty_fields">Champs vides</string>
+    <string name="settings">le réglage</string>
+    <string name="share">Partager</string>
+    <string name="share_app">Partager</string>
+    <string name="rate_app">la critique</string>
+
+</resources>

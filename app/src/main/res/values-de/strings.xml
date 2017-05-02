@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="about_app">App, um Ihnen zu helfen, Ihre täglichen Aufgaben zu erfüllen</string>
+    <string name="enter_task_description">Geben Sie Task Beschreibung ein</string>
+    <string name="enter_task">Geben Sie Task ein</string>
+    <string name="add_task">Aufgabe hinzufügen</string>
+    <string name="delete_task">Aufgabe löschen</string>
+    <string name="mark_as_done">Als erledigt markieren</string>
+    <string name="check_my_other_apps">Überprüfe meine anderen Apps</string>
+    <string name="empty_fields">Leerfelder</string>
+    <string name="settings">Einstellungen</string>
+    <string name="share">der Anteil</string>
+    <string name="share_app">der Anteil</string>
+    <string name="rate_app">Überprüfung</string>
+
+</resources>

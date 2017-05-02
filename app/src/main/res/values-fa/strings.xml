@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="about_app">برنامه برای کمک به شما انجام کارهای روزانه خود را</string>
+    <string name="enter_task_description">را وارد کنید شرح وظیفه</string>
+    <string name="enter_task">نوع کار</string>
+    <string name="add_task">اضافه کردن کار</string>
+    <string name="delete_task">حذف وظیفه</string>
+    <string name="mark_as_done">علامت گذاری به عنوان انجام شد</string>
+    <string name="check_my_other_apps">بررسی برنامه های دیگر من</string>
+    <string name="empty_fields">زمینه های خالی</string>
+    <string name="settings">تنظیمات</string>
+    <string name="share">بخش کردن</string>
+    <string name="share_app">بخش کردن</string>
+    <string name="rate_app">تجدید نظر</string>
+
+</resources>
