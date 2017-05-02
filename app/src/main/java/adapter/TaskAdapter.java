@@ -1,17 +1,22 @@
 package adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import io.realm.Realm;
 import list.complete.to.daily.app.v.dailytodolist.R;
+import list.complete.to.daily.app.v.dailytodolist.ViewTask;
 import model.Task;
 
 /**
@@ -22,11 +27,13 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.RecyclerViewHo
 
     private List<Task> data;
     private Context mContext;
+    Realm realm;
 
     public TaskAdapter(Context context, ArrayList<Task> data) {
         this.mContext = context;
         this.data = data;
         // setHasStableIds(true);
+        realm = Realm.getDefaultInstance();
     }
 
     @Override
@@ -41,17 +48,34 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.RecyclerViewHo
 
         final Task tempTask = data.get(viewHolder.getAdapterPosition());
 
-        viewHolder.mTaskName.setText(capitalizeFirstLetter(tempTask.getTask()));
+        viewHolder.mTaskName.setText(tempTask.getTask());
+
+        viewHolder.mCheckBox.setChecked(tempTask.isDone());
+
+        viewHolder.mCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                Task toEdit = realm.where(Task.class).equalTo("id", tempTask.getId()).findFirst();
+                realm.beginTransaction();
+                toEdit.setDone(b);
+                realm.commitTransaction();
+
+            }
+        });
+
+        viewHolder.mTaskName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(mContext, ViewTask.class);
+                intent.putExtra("id", tempTask.getId());
+                mContext.startActivity(intent);
+
+            }
+        });
 
     }
-
-    public String capitalizeFirstLetter(String original) {
-        if (original == null || original.length() == 0) {
-            return original;
-        }
-        return original.substring(0, 1).toUpperCase() + original.substring(1);
-    }
-
 
     @Override
     public int getItemCount() {
@@ -66,11 +90,13 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.RecyclerViewHo
     public class RecyclerViewHolder extends RecyclerView.ViewHolder {
         public LinearLayout placeHolder;
         protected TextView mTaskName;
+        protected CheckBox mCheckBox;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
             placeHolder = (LinearLayout) itemView.findViewById(R.id.mainHolder);
-            mTaskName = (TextView) itemView.findViewById(R.id.category_name);
+            mTaskName = (TextView) itemView.findViewById(R.id.task_name);
+            mCheckBox = (CheckBox) itemView.findViewById(R.id.checkbox);
         }
 
     }

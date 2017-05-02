@@ -11,7 +11,7 @@
     <style name="MyCustomToolBarTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:textColorPrimary">@color/colorAccent</item>
         <item name="android:textColorSecondary">@color/colorAccent</item>
-        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:colorBackground">@color/colorAccent</item>
     </style>
 
@@ -24,6 +24,11 @@
     <style name="toolbarCustomStyle" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:colorBackground">@color/colorPrimary</item>
         <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#d6566387</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
     </style>
 
 </resources>
