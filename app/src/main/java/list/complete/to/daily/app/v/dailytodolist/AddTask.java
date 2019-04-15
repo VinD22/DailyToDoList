@@ -1,5 +1,6 @@
 package list.complete.to.daily.app.v.dailytodolist;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -68,9 +69,9 @@ public class AddTask extends AppCompatActivity {
 
                     realm.commitTransaction();
 
-                    Toast.makeText(AddTask.this, R.string.add_task + " :D ", Toast.LENGTH_SHORT).show();
-//                    Intent intent = new Intent(AddTask.this, MainActivity.class);
-//                    startActivity(intent);
+                    Intent intent = new Intent(AddTask.this, MainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
                     finish();
 
                 }
